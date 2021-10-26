@@ -23,7 +23,7 @@ module.exports = {
   output: {
     publicPath: '/',
     filename: '[name].js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, process.env.BUILD_PATH),
     clean: true,
   },
   plugins: [
