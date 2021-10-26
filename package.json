@@ -1,0 +1,28 @@
+{
+  "name": "bot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "/src/index.js",
+  "scripts": {
+    "build-dev": "webpack --config webpack.dev.config.js",
+    "build-prod": "webpack --config webpack.prod.config.js",
+    "dev": "node ./dist/bot.js",
+    "prod": "node ./build/bot.js"
+  },
+  "author": "AMilkevich",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "telegraf": "^4.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
