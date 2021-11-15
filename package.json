@@ -12,6 +12,8 @@
   "author": "AMilkevich",
   "license": "ISC",
   "dependencies": {
+    "db-migrate": "^0.11.13",
+    "db-migrate-mysql": "^2.2.0",
     "dotenv": "^10.0.0",
     "telegraf": "^4.4.2"
   },
