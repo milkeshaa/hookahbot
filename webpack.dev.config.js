@@ -29,6 +29,11 @@ module.exports = {
     new webpack.DefinePlugin({
       'env.API_TOKEN': JSON.stringify(process.env.API_TOKEN),
       'env.APP_ENV': JSON.stringify(process.env.APP_ENV),
+      'env.DB_USERNAME': JSON.stringify(process.env.DB_USERNAME),
+      'env.DB_PASSWORD': JSON.stringify(process.env.DB_PASSWORD),
+      'env.DB_NAME': JSON.stringify(process.env.DB_NAME),
+      'env.DB_HOST': JSON.stringify(process.env.DB_HOST),
+      'env.DB_PORT': JSON.stringify(process.env.DB_PORT),
     }),
   ],
   module: {
@@ -39,7 +44,7 @@ module.exports = {
         loader: 'babel-loader',
         options: {
             presets: [
-                '@babel/preset-env',
+              '@babel/preset-env',
             ],
             plugins: [
               "@babel/transform-runtime",
